@@ -52,25 +52,25 @@ describe("GridSolver", () => {
         9, 0, 0, 0, 0, 0, 0, 5, 0
     )
 
-    function assertSolved(solution: Grid) {
+    function assertSolved(name: string, solution: Grid) {
         expect(solution).not.toBeNull();
         expect(solution.isFull()).toBeTruthy();
-        console.log(solution);
+        console.log(name, solution);
     }
 
     it("should solve 'easy' puzzle", () => {
-        assertSolved(GridSolver.solve(easyGrid))
+        assertSolved('easy puzzle', GridSolver.solve(easyGrid))
     });
 
     it("should solve 'medium' puzzle", () => {
-        assertSolved(GridSolver.solve(mediumGrid))
+        assertSolved('medium puzzle', GridSolver.solve(mediumGrid))
     });
 
     it("should solve 'hard' puzzle", () => {
-        assertSolved(GridSolver.solve(hardGrid))
+        assertSolved('hard puzzle', GridSolver.solve(hardGrid))
     });
 
     it("should solve 'evil' puzzle", () => {
-        assertSolved(GridSolver.solve(evilGrid))
+        assertSolved('evil puzzle', GridSolver.solve(evilGrid))
     });
 });
