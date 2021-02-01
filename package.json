@@ -17,10 +17,6 @@
     "serve-debug": "nodemon --inspect dist/server.js",
     "watch-debug": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-sass\" \"npm run watch-ts\" \"npm run serve-debug\""
   },
-  "repository": {
-    "type": "git",
-    "url": "https://code.corp.creditkarma.com/martin-randall-ck/sudoku-kata-ts.git"
-  },
   "keywords": [
     "sudoku",
     "kata",
